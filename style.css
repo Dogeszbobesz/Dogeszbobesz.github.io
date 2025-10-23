@@ -1,0 +1,86 @@
+/*csuszos görgetés a linkekhez*/
+html{
+    scroll-behavior: smooth;
+    background-color: dimgray;
+}
+/*maga a baloldalon lévő sidenav bar*/
+.sidenav{
+    margin:10px;
+    width: 120;
+    z-index: 1;
+    top: 0;
+    left:0;
+    overflow-x: hidden;
+    background-color: #cb9090;
+    padding-top: 0px;
+    position: fixed;
+    border-style: solid;
+    border-radius: 12px;
+    display: block;
+
+}
+/*a sidenavben lévö linknek a formázása*/
+.sidenav a{ 
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(60, 44, 77);
+    display: block;
+}
+.sidenav p{
+    padding: 2px;
+    margin: 0px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(60, 44, 77);
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-top:0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: black;
+    background-color: aliceblue;
+    margin-top: 0;
+}
+/*Ha rá mutat a linkre akkor megváltozik a link szine*/
+.sidenav a:hover{
+    color: rgb(52, 25, 80);;
+}
+/*csak hogy a bodynak ne legyen marginja és paddingje se*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #696969;
+}
+/*Ez kell a divbe hogy elkülönitsem a sidenav bartól*/
+.main{
+    margin-left: 200px;
+    font-size: 20px;
+    font-family:'Lucida Sans Regular';
+    margin-right:10px;
+    margin-top: 10px;
+    border-style:solid;
+    border-radius:20px;
+    background-color: darkgrey;
+    border-width: 2px;
+}
+header{
+font-size: 30px;
+text-align: center;
+margin-top: 20px;
+}
+.main p{
+    margin-left:10px;
+    margin-right:10px;
+}
+div .maker{
+    z-index: 1;
+    left: 0;
+    width: 120;
+    overflow-x: hidden;
+    position: fixed;
+    display: block;
+
+
+}
