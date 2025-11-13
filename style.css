@@ -61,7 +61,7 @@ body{
 }
 /*Ez kell a divbe hogy elkülönitsem a sidenav bartól*/
 .main{
-    margin-left: 200px;
+    margin-left: 220px;
     font-size: 22px;
     font-family:'Times New Roman';
     margin-right:10px;
