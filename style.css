@@ -1,22 +1,22 @@
 /*csuszos görgetés a linkekhez*/
 html{
     scroll-behavior: smooth;
-    background-color: dimgray;
+    background-color: rgb(255, 255, 255);
 }
 /*maga a baloldalon lévő sidenav bar*/
 .sidenav{
-    margin:10px;
+    margin-top:20px;
+    margin-left: 10px;
     width: 120;
     z-index: 1;
     top: 0;
     left:0;
     overflow-x: hidden;
-    background-color: #cb9090;
     padding-top: 0px;
     position: fixed;
-    border-style: solid;
-    border-radius: 12px;
     display: block;
+    border-width: 2px;
+    background-color: rgb(255, 255, 255);
 
 }
 /*a sidenavben lévö linknek a formázása*/
@@ -24,63 +24,72 @@ html{
     padding: 10px 20px 10px 10px;
     text-decoration: none;
     font-size: 20px;
-    color: rgb(60, 44, 77);
+    color:black;
+    font-weight: bolder;
+    text-align: center;
     display: block;
+    border-style: solid;
+    border-width: 2px ;
+    border-radius: 12px;
+    margin-top: 5px;
+    background-image: linear-gradient(90deg, #2bbbb9cb 0%, #ffffff 100%);
 }
 .sidenav p{
     padding: 2px;
     margin: 0px;
-    text-decoration: none;
-    font-size: 20px;
-    color: rgb(60, 44, 77);
+    font-weight: bolder;
+    font-size: 25px;
+    color: black;
     display: flex;
     justify-content: center;
     border-style: solid;
-    border-top:0px;
-    border-left: 0px;
-    border-right: 0px;
+    border-width: 2px ;
     border-color: black;
-    background-color: aliceblue;
+    background-image: linear-gradient(90deg, #06b6d4 0%, #ffffff 100%);
     margin-top: 0;
+    border-radius: 12px;
 }
 /*Ha rá mutat a linkre akkor megváltozik a link szine*/
 .sidenav a:hover{
-    color: rgb(52, 25, 80);;
+    color: rgb(199, 196, 202);;
 }
 /*csak hogy a bodynak ne legyen marginja és paddingje se*/
 body{
     margin: 0;
     padding: 0;
-    background-color: #696969;
+    background-color: rgb(255, 255, 255);
 }
 /*Ez kell a divbe hogy elkülönitsem a sidenav bartól*/
 .main{
     margin-left: 200px;
-    font-size: 20px;
-    font-family:'Lucida Sans Regular';
+    font-size: 22px;
+    font-family:'Times New Roman';
     margin-right:10px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-style:solid;
     border-radius:20px;
-    background-color: darkgrey;
+    background-color: rgb(255, 255, 255);
     border-width: 2px;
+    margin-bottom:10px;
 }
+
 header{
-font-size: 30px;
+font-size: 40px;
 text-align: center;
 margin-top: 20px;
+color: white;
+font-weight: bold;
+margin-bottom:10px;
+border-style: none;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(64, 65, 120, 0.3);
+margin-left: 40px;
+margin-right: 40px;
+background-color: rgb(97, 164, 227);
+display: block;
 }
 .main p{
     margin-left:10px;
     margin-right:10px;
-}
-div .maker{
-    z-index: 1;
-    left: 0;
-    width: 120;
-    overflow-x: hidden;
-    position: fixed;
-    display: block;
-
-
+    margin-bottom:10px;
 }
