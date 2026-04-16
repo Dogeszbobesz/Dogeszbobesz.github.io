@@ -126,6 +126,13 @@ header {
     justify-content: center;
     margin-bottom: 20px;
 }
+    .profilkep {
+    width: 20%;
+    height: 20%;
+    float: right;
+    margin-bottom:0px;
+    border-radius: 10px
+    }
 
 /* 3. MOBIL NÉZET - Ez legyen a fájl végén, hogy felülbírálja az asztalit! */
 @media screen and (max-width: 768px) {
@@ -178,7 +185,13 @@ header {
         width: 80%;
         margin: 20px auto;
     }
-
+    .profilkep {
+    width: 25%;
+    height: 25%;
+    float: right;
+    margin-bottom:0px;
+    border-radius: 10px
+    }
     header {
         font-size: 26px;
     }
