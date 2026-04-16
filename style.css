@@ -1,6 +1,136 @@
-@media screen and (max-width: 768px) {
+* {
+    box-sizing: border-box; /* Ez megakadályozza, hogy a padding és a margin "kitolja" az elemeket a képernyőről */
+}
+li {
+    margin-bottom: 10px;
+    font-size: 24px;
+}   
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(87, 87, 87);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 49, 49);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* 2. Asztali (Desktop) nézet stílusai */
+.topbar {
+    display: flex;
+    width: 100%;
+    background-color: rgb(17, 16, 16);
+    z-index: 10;
+    position: relative;
+    padding: 10px 0;
+}
+
+.topbar p {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    font-size: x-large;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+.sidenav {
+    margin-top: 70px;
+    margin-left: 10px;
+    width: 200px;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+
+}
+
+.sidenav p {
+    padding: 10px;
+    margin: 0;
+    font-weight: bolder;
+    font-size: 22px;
+    color: black;
+    text-align: center;
+    background-color: honeydew;
+    border-radius: 10px;
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    display: block;
+    border-radius: 12px;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #2bbbb9cb 0%, #6ab9c7 100%);
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: white;
+}
+
+.main {
+    margin-left: 240px; /* Helyet hagyunk a bal oldali menünek */
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    width: calc(100% - 260px); /* Kiszámoljuk a maradék helyet */
+}
+
+.main p {
+    font-size: 26px;
+    line-height: 1.6;
+    margin: 15px 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    font-size: 32px;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(97, 164, 227);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+
+
+.footer {
+    background-color: rgb(17, 16, 16);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    clear: both;
+}
+
+.tdkpl {
+    width: 70%;
+    height: 70%;
+    margin-top: 0;
+    position: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* 3. MOBIL NÉZET - Ez legyen a fájl végén, hogy felülbírálja az asztalit! */
+@media (max-width: 768px) {
     .topbar {
-        display: none; /* Eltüntetjük a fix felső csíkot */
+        display: none; /* Mobilon ne foglalja a helyet a felső sáv */
     }
 
     .sidenav {
@@ -10,221 +140,49 @@
         width: 100%;
         height: auto;
         margin: 0;
-        padding: 5px 0;
+        padding: 5px;
+        background-color: rgb(17, 16, 16);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        background-color: rgb(17, 16, 16);
-        z-index: 1000;
         border-radius: 0;
+        z-index: 100;
     }
 
     .sidenav p {
-        display: none; /* "Tartalomjegyzék" felirat nem kell telefonra */
+        display: none; /* A "Tartalomjegyzék" felirat mobilon felesleges */
     }
 
     .sidenav a {
-        font-size: 13px;
+        font-size: 14px;
         margin: 4px;
-        padding: 8px 10px;
-        width: auto; /* Csak akkora legyen, amekkora a szöveg */
+        padding: 8px 12px;
+        width: auto;
+        border-radius: 8px;
     }
 
     .main {
-        margin-left: 0 !important; /* Teljes szélesség */
-        margin-right: 0 !important;
-        margin-top: 120px; /* Helyet hagyunk a fenti menünek */
+        margin-left: 0; /* Mobilon nincs bal oldali margó! */
+        margin-right: 0;
+        margin-top: 110px; /* Hely a fenti menünek */
         width: 100%;
-        box-sizing: border-box; /* Hogy a padding ne tolja ki az oldalt */
         border-radius: 0;
+        padding: 15px;
     }
 
     .main img {
-        width: 80% !important;
-        float: none !important;
+        float: none; /* Ne ússzon a kép, mert mobilon túl kicsi hozzá a hely */
         display: block;
-        margin: 20px auto !important;
+        width: 80%;
+        margin: 20px auto;
     }
 
     header {
-        font-size: 24px;
-        margin-left: 5px;
-        margin-right: 5px;
+        font-size: 26px;
     }
-}
-/*csuszos görgetés a linkekhez*/
-html{
-    scroll-behavior: smooth;
-    background-color: rgb(87, 87, 87);
-    margin: 0;
-    padding: 0;
-}
-.topbar{
-    display:flex;
-    overflow-x: hidden;
-    top:0;
-    width:100%;
-    background-color: rgb(17, 16, 16);
-    margin: 0;
-    z-index: 1;
-}
-.topbar a.left{
-    display:block;
-    float: left;
-    text-decoration: none;
-    width: 25%;
-    text-align:left;
-    border-left: 1px;
-    font-size:x-large;
-    font-family:'Times New Roman';
 
-    
-}
-.topbar img.right{
-    float: left;
-    text-decoration: none;
-    width: 25%;
-    height: 15px;
-    text-align:right;
-    display:block;
-    
-}
-.topbar p{
-    display: block;
-    text-align: center;
-    float:left;
-    width:50%;
-    margin:0;
-    font-size:x-large;
-    padding: 0;
-    color: aliceblue;
-    font-family: 'Times New Roman';
-    font-weight: bolder;
-}
-/*maga a baloldalon lévő sidenav bar*/
-.sidenav{
-    margin-top:40px;
-    margin-left: 10px;
-    width: 10%;
-    z-index: 1;
-    top: 0;
-    left:0;
-    overflow-x: hidden;
-    padding-top: 0px;
-    position: fixed;
-    display: block;
-    border-radius: 12px;
-    background-color:transparent;
-}
-/*a sidenavben lévö linknek a formázása*/
-.sidenav a{ 
-    padding: 10px 20px 10px 10px;
-    text-decoration: none;
-    font-size: 20px;
-    color:black;
-    font-weight: bolder;
-    text-align: center;
-    display: block;
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 12px;
-    margin-top: 10px;
-    background-image: linear-gradient(90deg, #2bbbb9cb 0%, #6ab9c7 100%);
-    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-}
-.sidenav p{
-    padding: 10px 20px 10px 10px;
-    margin: 0px;
-    font-weight: bolder;
-    font-size: 25px;
-    color: black;
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    margin-top: 0;
-    background-color: honeydew;
-}
-/*Ha rá mutat a linkre akkor megváltozik a link szine*/
-.sidenav a:hover{
-    color: rgb(199, 196, 202);;
-}
-/*csak hogy a bodynak ne legyen marginja és paddingje se*/
-body{
-    margin: 0;
-    padding: 0;
-    background-color: rgb(51, 49, 49);
-}
-/*Ez kell a divbe hogy elkülönitsem a sidenav bartól*/
-.main{
-    margin-left: 240px;
-    font-size: 22px;
-    font-family:'Times New Roman';
-    margin-right:10px;
-    margin-top: 10px;
-    border-style:solid;
-    border-radius:20px;
-    background-color: rgb(255, 255, 255);
-    border-width: 0.1px;
-    margin-bottom:10px;
-    width: 80%;
-    display: block;
-    padding: 20px;
-}
-.main p{
-    margin:20px;
-    font-size:30px;
-    width: 100%;
-    
-}
-.main img{
-    width: 20%;
-    height: 20%;
-    float: right;
-    margin: 100px;
-    margin-bottom:0px;
-    border-radius: 10px;
-}
-header{
-font-size: 40px;
-text-align: center;
-margin-top: 20px;
-color: white;
-font-weight: bold;
-margin-bottom:10px;
-border-style: none;
-border-radius: 12px;
-box-shadow: 0 4px 10px rgba(64, 65, 120, 0.3);
-margin-left: 40px;
-margin-right: 40px;
-background-color: rgb(97, 164, 227);
-display: block;
-}
-.main p{
-    margin-left:10px;
-    margin-right:10px;
-    margin-bottom:10px;
-    padding: 3px;
-}
-.footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;    
-  background-color: rgb(17, 16, 16);
-  color: white;
-  text-align: center;
-  margin: 0;
-  padding:0;
-}
-.footer p{
-    padding: 6;
-    margin:0;
-    margin-bottom:4;
-}
-.tdkpl{
-    display:flex;
-    text-align: center;
-    justify-content: center;
-    margin-bottom:30px;
+    .main p {
+        font-size: 18px;
+    }
 }
