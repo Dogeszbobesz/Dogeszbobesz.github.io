@@ -128,7 +128,7 @@ header {
 }
 
 /* 3. MOBIL NÉZET - Ez legyen a fájl végén, hogy felülbírálja az asztalit! */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .topbar {
         display: none; /* Mobilon ne foglalja a helyet a felső sáv */
     }
@@ -169,6 +169,7 @@ header {
         width: 100%;
         border-radius: 0;
         padding: 15px;
+        margin-bottom: 0px;
     }
 
     .main img {
