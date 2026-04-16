@@ -9,7 +9,7 @@ html{
     display:flex;
     overflow-x: hidden;
     top:0;
-    width:100vw;
+    width:100%;
     background-color: rgb(17, 16, 16);
     margin: 0;
     z-index: 1;
@@ -18,7 +18,7 @@ html{
     display:block;
     float: left;
     text-decoration: none;
-    width: 25vw;
+    width: 25%;
     text-align:left;
     border-left: 1px;
     font-size:x-large;
@@ -29,7 +29,7 @@ html{
 .topbar img.right{
     float: left;
     text-decoration: none;
-    width: 25vw;
+    width: 25%;
     height: 15px;
     text-align:right;
     display:block;
@@ -39,7 +39,7 @@ html{
     display: block;
     text-align: center;
     float:left;
-    width:50vw;
+    width:50%;
     margin:0;
     font-size:x-large;
     padding: 0;
@@ -51,7 +51,7 @@ html{
 .sidenav{
     margin-top:40px;
     margin-left: 10px;
-    width: 10vw;
+    width: 10%;
     z-index: 1;
     top: 0;
     left:0;
@@ -113,7 +113,7 @@ body{
     background-color: rgb(255, 255, 255);
     border-width: 0.1px;
     margin-bottom:10px;
-    width: 70vw;
+    width: 80%;
     display: block;
 }
 .main p{
@@ -153,7 +153,7 @@ display: block;
 .footer {
   left: 0;
   bottom: 0;
-  width: 100vw;    
+  width: 100%;    
   background-color: rgb(17, 16, 16);
   color: white;
   text-align: center;
@@ -164,4 +164,9 @@ display: block;
     padding: 6;
     margin:0;
     margin-bottom:4;
+}
+.tdkpl{
+    display:flex;
+    text-align: center;
+    justify-content: center;
 }
