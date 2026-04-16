@@ -1,47 +1,79 @@
 @media (max-width: 768px) {
 
-    /* Topbar eltüntetése */
+    /* ===== TOPBAR KIKAPCS ===== */
     .topbar {
         display: none;
     }
 
-    /* Sidenav átalakítása felső menüvé */
+    /* ===== SIDENAV → TOP NAVBAR ===== */
     .sidenav {
-        position: relative;
+        position: fixed;   /* fontos: maradjon felül scrollnál */
+        top: 0;
+        left: 0;
         width: 100%;
         height: auto;
+        margin: 0;
+        padding: 10px;
+
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-wrap: wrap; /* ha nem fér ki */
+        justify-content: center;
         align-items: center;
-        padding: 10px;
+
+        background-color: rgb(17,16,16);
+        border-radius: 0;
+        z-index: 1000;
     }
 
-    /* Menü linkek vízszintesen */
-    .sidenav a {
-        display: inline-block;
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    /* "Tartalomjegyzék" szöveg eltüntetése */
+    /* cím eltűnik */
     .sidenav p {
         display: none;
     }
 
-    /* Main teljes szélesség */
-    .main {
-        margin-left: 0;
-        width: 100%;
-        padding: 20px;
+    /* linkek navbar kinézet */
+    .sidenav a {
+        font-size: 14px;
+        margin: 5px;
+        padding: 8px 12px;
+
+        border-radius: 8px;
+        background-image: none;
+        background-color: rgb(97,164,227);
+        color: white;
     }
 
-    /* Képek ne lógjanak ki */
-    img {
+    /* ===== MAIN TELJES SZÉLESSÉG ===== */
+    .main {
+        margin: 0;
+        margin-top: 70px; /* hely a navbar miatt */
+        width: 100%;
+        padding: 15px;
+        border-radius: 0;
+    }
+
+    /* ===== SZÖVEG MÉRET ===== */
+    .main p {
+        font-size: 18px;
+    }
+
+    header {
+        font-size: 26px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    /* ===== KÉPEK FIX ===== */
+    .main img {
         width: 100%;
         height: auto;
         float: none;
         margin: 10px 0;
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+        text-align: center;
+        padding: 10px;
     }
 }
 /*csuszos görgetés a linkekhez*/
