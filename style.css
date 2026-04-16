@@ -1,79 +1,56 @@
-@media (max-width: 768px) {
-
-    /* ===== TOPBAR KIKAPCS ===== */
+@media screen and (max-width: 768px) {
     .topbar {
-        display: none;
+        display: none; /* Eltüntetjük a fix felső csíkot */
     }
 
-    /* ===== SIDENAV → TOP NAVBAR ===== */
     .sidenav {
-        position: fixed;   /* fontos: maradjon felül scrollnál */
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: auto;
         margin: 0;
-        padding: 10px;
-
+        padding: 5px 0;
         display: flex;
-        flex-wrap: wrap; /* ha nem fér ki */
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-
-        background-color: rgb(17,16,16);
-        border-radius: 0;
+        background-color: rgb(17, 16, 16);
         z-index: 1000;
-    }
-
-    /* cím eltűnik */
-    .sidenav p {
-        display: none;
-    }
-
-    /* linkek navbar kinézet */
-    .sidenav a {
-        font-size: 14px;
-        margin: 5px;
-        padding: 8px 12px;
-
-        border-radius: 8px;
-        background-image: none;
-        background-color: rgb(97,164,227);
-        color: white;
-    }
-
-    /* ===== MAIN TELJES SZÉLESSÉG ===== */
-    .main {
-        margin: 0;
-        margin-top: 70px; /* hely a navbar miatt */
-        width: 100%;
-        padding: 15px;
         border-radius: 0;
     }
 
-    /* ===== SZÖVEG MÉRET ===== */
-    .main p {
-        font-size: 18px;
+    .sidenav p {
+        display: none; /* "Tartalomjegyzék" felirat nem kell telefonra */
+    }
+
+    .sidenav a {
+        font-size: 13px;
+        margin: 4px;
+        padding: 8px 10px;
+        width: auto; /* Csak akkora legyen, amekkora a szöveg */
+    }
+
+    .main {
+        margin-left: 0 !important; /* Teljes szélesség */
+        margin-right: 0 !important;
+        margin-top: 120px; /* Helyet hagyunk a fenti menünek */
+        width: 100%;
+        box-sizing: border-box; /* Hogy a padding ne tolja ki az oldalt */
+        border-radius: 0;
+    }
+
+    .main img {
+        width: 80% !important;
+        float: none !important;
+        display: block;
+        margin: 20px auto !important;
     }
 
     header {
-        font-size: 26px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    /* ===== KÉPEK FIX ===== */
-    .main img {
-        width: 100%;
-        height: auto;
-        float: none;
-        margin: 10px 0;
-    }
-
-    /* ===== FOOTER ===== */
-    .footer {
-        text-align: center;
-        padding: 10px;
+        font-size: 24px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 /*csuszos görgetés a linkekhez*/
