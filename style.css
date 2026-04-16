@@ -121,10 +121,11 @@ header {
 .tdkpl {
     width: 70%;
     height: 70%;
-    margin-top: 0;
+    float:none;
+    display: block;
+    text-align: center;
     position: center;
     justify-content: center;
-    margin-bottom: 20px;
 }
     .profilkep {
     width: 20%;
@@ -133,6 +134,19 @@ header {
     margin-bottom:0px;
     border-radius: 10px
     }
+    .tdkpl {
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+    margin-bottom: 30px;
+}
+    .tdkpl img {
+    float: none !important; /* Kikapcsoljuk az eltolást */
+    display: block;        /* Blokk elemként kezeljük */
+    margin: 0 auto;        /* Középre igazítjuk */
+    max-width: 70%;       /* Ne lógjon ki */
+    height: auto;
+}
 
 /* 3. MOBIL NÉZET - Ez legyen a fájl végén, hogy felülbírálja az asztalit! */
 @media screen and (max-width: 768px) {
