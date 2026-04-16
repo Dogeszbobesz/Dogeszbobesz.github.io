@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="" type="text/css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.3">
+<title>Lőrincz Dávid Portfolio</title>
+<script src="scripts.js"></script>
+<style>
+    html{
+    scroll-behavior: smooth;
+    background-color: rgb(87, 87, 87);
+    margin: 0;
+    padding: 0;
+}
+.topbar{
+    display:flex;
+    overflow-x: hidden;
+    top:0;
+    width:100%;
+    background-color: rgb(17, 16, 16);
+    margin: 0;
+    z-index: 1;
+}
+.topbar a.left{
+    display:block;
+    float: left;
+    text-decoration: none;
+    width: 25%;
+    text-align:left;
+    border-left: 1px;
+    font-size:x-large;
+    font-family:'Times New Roman';
+
+    
+}
+.topbar img.right{
+    float: left;
+    text-decoration: none;
+    width: 25%;
+
+
+}
+.topbar p{
+    display: block;
+    text-align: center;
+    float:left;
+    width:50%;
+    margin:0;
+    font-size:x-large;
+    padding: 0;
+    color: aliceblue;
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+}
+/*maga a baloldalon lévő sidenav bar*/
+.sidenav{
+    margin-top:40px;
+    margin-left: 10px;
+    width: 13%;
+    z-index: 1;
+    top: 0;
+    left:0;
+    overflow-x: hidden;
+    padding-top: 0px;
+    position: fixed;
+    display: block;
+    border-radius: 12px;
+    background-color:transparent;
+}
+/*a sidenavben lévö linknek a formázása*/
+.sidenav a{ 
+    padding: 10px 20px 10px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color:black;
+    font-weight: bolder;
+    text-align: center;
+    display: block;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 12px;
+    margin-top: 10px;
+    background-image: linear-gradient(90deg, #2bbbb9cb 0%, #6ab9c7 100%);
+    box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.sidenav p{
+    padding: 10px 20px 10px 10px;
+    margin: 0px;
+    font-weight: bolder;
+    font-size: 25px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 0;
+    background-color: honeydew;
+}
+/*Ha rá mutat a linkre akkor megváltozik a link szine*/
+.sidenav a:hover{
+    color: rgb(199, 196, 202);;
+}
+/*csak hogy a bodynak ne legyen marginja és paddingje se*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(51, 49, 49);
+}
+/*Ez kell a divbe hogy elkülönitsem a sidenav bartól*/
+.main{
+    display: block;
+    margin-left: 280px;
+    font-size: 22px;
+    font-family:'Times New Roman';
+    margin-right:10px;
+    margin-top: 10px;
+    border-style:solid;
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    border-width: 0.1px;
+    margin-bottom:10px;
+    width: 80%;
+    display: block;
+}
+
+header{
+font-size: 40px;
+text-align: center;
+margin-top: 20px;
+color: white;
+font-weight: bold;
+margin-bottom:10px;
+border-style: none;
+border-radius: 12px;
+box-shadow: 0 4px 10px rgba(64, 65, 120, 0.3);
+margin-left: 40px;
+margin-right: 40px;
+background-color: rgb(97, 164, 227);
+display: block;
+}
+.main .tdkpl{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-style: none;
+}
+.main p{
+    margin:20px;
+    font-size:26px;
+    width: 60%;
+    
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;    
+  background-color: rgb(17, 16, 16);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding:0;
+}
+.footer p{
+    padding: 6;
+    margin:0;
+    margin-bottom:4;
+}
+</style>
+</head>
+<body>
+    <div class="topbar">
+        <a href="" class="left"></a>
+        <p>Portfoliom</p>
+        <img src="" alt="">
+    </div>
+    <div class="sidenav">
+        <p>Tartalomjegyzék</p>
+        <a href="#section0">Bemutatkozás</a>
+        <a href="#section2">Duális képzés</a>
+        <a href="onallomunkaim.html">Önállómunkáim</a>
+        <a href="#section4">Céljaim</a>
+        <a href="#section3">Összegzés</a>
+        
+    </div>
+    <div class="main" id="section0">
+        <header>Bemutatkozó</header>
+        <p style="width: 100%;">Lőrincz Dávid vagyok, 19 éves. Egy testvérem van, aki jelenleg egyetemi tanulmányait folytatja.</p>
+        <p style="width: 100%;">Már kisgyermekkorom óta érdekel az elektronika és a villamosság területe. Ebben nagy szerepe volt annak, hogy édesapám villanyszerelő, így korán betekintést nyerhettem a szakmába. Az évek során egyre inkább körvonalazódott bennem, hogy ezzel szeretnék foglalkozni a jövőben.<br>Nemcsak érdekesnek találom ezt a területet, hanem komoly fejlődési és karrierlehetőséget is látok benne.</p>
+        <P style="width: 100%;">A Vas Vármegyei Szakképzési Centrum Gépipari és Informatikai Technikumában tanulok, ahol ipari informatikai technikusi képzésben veszek részt.<br> 2023 óta duálisképzésben tanulok a TDK Hungary Components Kft. tanműhelyében, ahol gyakorlati tapasztalatot és ismereteket szereztem a szakmában.<br>Az idei évben szakmai vizsgát teszek.</P>
+        <p>Szabadidőmbe szeretek:</p><img src="Képem.jpg" alt="Töltés" style="width: 20%;height: 20%;float: right;margin: 100px;margin-bottom:0px;border-radius: 10px;">
+        <ul>
+            <li>Zenéthallgatni</li>
+            <li>Videókat nézni</li>
+            <li>A műhelyembe dolgozni</li>
+        </ul>
+        <p style="width: 100%;">Hobbim az elektronikai eszközök szétszerelése (pl mikrók, hangszorók és tévék)</p>
+        <p>A szakmai képzesem során ismereteket és tapasztalatot szerezhettem a szakmámhoz kapcsolodó területeken:</p>
+        <ul>
+            <li>PLC programozás</li>
+            <li>C programozás alapjai</li>
+            <li>Digitális rendszerek alapjai</li>
+            <li>Adatbáziskezelés</li>
+            <li>Bekötési rajzok értelmezése és megvalósitása</li>
+            <li>Érintésvédelm</li>
+            <li>Robot programozás</li>
+            <li>Nyomtattot áramkörök tervezése</li>
+            <li>Forrasztás</li>
+            <li>Arduino programozás</li>
+            <li>Pneumatika</li>
+        </ul>
+    </div>
+    <div class="main" id="section1">
+        <header>Gépipari</header>
+        <p>A gépipariba az első két évem alapismeretek és tapasztalatok szerzéséről szólt, e két év  során fémmegmunkálással, villamosságtannal, műszakirajzzal, mérésekkel, áramkörökkel és kapcsolásokkal ismerkedtem meg.</p>
+        <p style="font-weight: bolder;text-decoration:underline;">Fémmegmunkálás, műszakirajz, mérések:<br></p>
+        <p>A fémmegmunkálás során megismerkedtem többféle eszközökkel, mint a tolómérő, rádiuszsablon, reszelő, fűrész és oszlopos fúrógép.<br> A tanitás során többféle megmunkálási feladatot kaptunk, ahol műszaki rajz alapján kellet megvalósítani a munkadarabot.</p>
+        <p>A munkadarabok elkészítése során dokumentálni kell a munkadarab méreteinek a meg felelősséget a munkadaraboknak egy adott tűréshatáron belül kell lenniük. <br>A munkadarab dokumentálásával tapasztalatot szerezhettem a helyes dokumentáláson.</p>
+        <p>A fémmegmunkálást kiegészítő óra a műszaki rajz óránk volt, ahol a munkadarabok megtervezésével és ábrázolások gyakorlásával foglalkoztunk. Tapasztalatot szerezhettem munkadarabok ábrázolásában és megtervezésében.</p>
+        <p style="font-weight: bolder;text-decoration:underline;">Villamosságtan, kapcsolások, alap áramkörök, mérések:</p>
+        <p>A villamoságtanon belül megismerkedtem a villamosággal kapcsolatos alapelvekkel mint az Ohm törvény, Kirchhoff törvény, Norton és Thevenin helyettesítő kép és a szuperpozició elvével. Főleg számításokkal és kapcsolásokkal foglalkoztunk.</p>
+        <p>A gyakorlati órákon villamos kapcsolásokkal, mérésekkel, forrasztással,  soros és párhuzamos áramkörökkel szerezhettem tapasztalatot. Az áramkörök építéséhez breadboardokat használtunk amely, elektronikai alaktrészek befogadására képes.</p>
+        <p>A méréseknél főleg multiméterrel dolgoztam ellenállás mértünk, feszültséget, és áramerősséget amelyet dokumentálni kellet ez által a dokumentálásba további tapasztalatot szereztem. Ezeken az órákon Érintés-Munka-Tűzvédelemben is szereztem ismereteket.</p>
+        <p>A 10.évfolyam végén ezekből a tantárgyakból ágazati vizsgát tettem.</p>
+
+    
+    </div>
+    <div class="main" id="section2">
+        <header>TDK Duálisképzés</header>
+        <div class="tdkpl">
+            <img src="tdkhely.jpg" alt="Töltés" style="width: 70%;height: 70%;">
+        </div>
+        <header>11. évfolyam</header>
+        <p>A 11.évfolyamom során lehetőséget kaptam jelentkezni a TDK duálisképzésre mely  szakmai kihívások elé állított és sok értékes tapasztalatot nyújtott. Első évembe a digitálistechnika, elektronika és a plc programozás alapjait sajátítottam el.</p>
+        <p>Digitálistechnikán a legalapvetőbb logikai kapukba szerezhettem betekintést amellyel bármilyen áramköri menet ábrázolható, mint az ÉS, VAGY, NAND, NOR kapuk, ezek ábrázolásával, egyszerűsítésével és alkalmazásával foglalkoztam. </p>
+        <p>Elektronikából megismerkedhettem az áramkörök alap alkatrészeivel, mint az ellenállás, a kondenzátor, a tekercs és a tranzisztor, ezek tulajdonságaival és hogyan működnek váltakozó és egyenáramú áramkörök alkalmazásában. </p>
+        <p>PLC programozás során főleg a probléma megoldókészség és az algoritmikus gondolkodás elsajátításán volt a hangsúly. Mindezek mellet tapasztalatot szerezhettem valós ipari környezetben üzemelő plc-k programozásában. Az oktatás során főleg Omron PLC-ékkel foglalkoztam mivel ezek voltak elérhetők a duálisképzés során.</p>
+        <p>A duálisképzés során nyári gyakorlatom volt minden tanév végén. Ahol eleinte fémmegmunkálással foglalkoztam, majd pedig önálló munkát végeztem háromfázisú motorok beszerelésével és gyártásból selejtezett háromfázisú motorok javításával.</p>
+        <header>12. évfolyam</header>
+        <p>Második évem során az eddigi szakmai tanulmányaimat kibővítette az adatbáziskezelés, c nyelvű programozás és a weblap szerkesztés.</p>
+        <p>Adatbáziskezelésen a Microsoftnak az SQL Server felületét használtam, ahol meg ismerkedtem több alapvető részével az adatbázisnak, mint a táblák szerkezetével, táblák közötti kapcsolatokkal és alapvető lekérdezésekkel.</p>
+        <p>C nyelvű programozás során, mint a PLC programozásnál ugyan úgy a probléma megoldókészségemet kellet hasznosítanom. A C nyelv az egyik legalapabb nyelv az assembly-n kívül mivel hardver közeli a nyelv, hírességet a gyorsaságának és a közvetlen memória eléréséhez köthető. Főleg a nyelv sajátosságait és szintaktikáját ismerhettem meg.</p>
+        <p>Weblapfejlesztés úgy hiszem magától értetődő, hogy egy ilyen óra is kellet mivel a vizsgánk egyik feltétele egy saját portfolió írása html-ben. A html-nek az alap szintaktikájával ismerkedtem meg majd a hozzá fűződő css-es amely a stílusát adja a weblapnak valamit JavaScripttel is foglalkoztam.</p>
+        <p>Ebben az tanévben is volt nyári gyakorlatom melynek során a gyártásban vehettem részt ahol megismerkedtem a TDK-nak gépeivel, nagyrészt a gépek karbantartásával foglalkoztam.</p>
+        <header>13. évfolyam</header>
+        <p>Az utolsó évemben amin a technikusi vizsgámat teszem, nagy hangsúlyt helyeztünk az Ipari buszokra, arduinó mikrokontrollerek programozására valamint tovább mélyítettük ismereteinket a PLC programozás területén.</p>
+        <p>Ipari buszokból megismerhettem a I2C, RS232, SPI, CAN, ProfiBus-t e ipari buszok tulajdonságait, különbségeit, működési elvüket.</p>
+        <p>Szemely szerint az Arduino mikrokontroller nyerte el leginkább érdeklődésem az évek során. Ismereteket szereztem a felépítéséről, valamint magáról a programozási nyelvéről. Annyira megtetszett, hogy vettem magamnak otthonra is egyet, és saját projekteket is csináltam.</p>
+    </div>
+    <div class="main">
+        <header id="section4" >Céljaim</header>
+            <p style="width: 100%;">A közeli fő célom hogy sikeresen elvégezzem a szakmai vizsgámat.</p>
+            <p style="width: 100%;">Bekerüljek a Budapest Műszaki Egyetemre, ahol villamosmérnőki szakon szeretnék tanulni.</p>
+            <p style="width: 100%;">Büszkévé tegyem a szüleimet, hogy erre is képes vagyok.</p>
+            <p style="width: 100%;">Távolabbi célom pedig hogy saját projekteket készítsek és valosítsak meg.</p>
+    </div>
+    <div class="main" id="section3">
+        <header>Összegzés</header>
+        <p style="width: 100%;">Összegzésül azt szeretném mondani hogy a Gépipari és a duálisképzés egy olyan oktatással látott el amely szakmailag elegendő lenne elhelyezkedni de, jó szakember csak abbol lesz aki élvezi a munkáját és még ért is hozzá.</p>
+    </div>
+
+    <div class="footer">
+  <p>Elérhetőségek:<a style="text-decoration:none; color:inherit;" href="mailto:davidlorincz10112@gmail.com">Email,</a><a style="text-decoration:none; color:inherit;"  href="tel:+36307194140">Telefon</a></p>
+  Copyright © 2025-2026
+</div>
+</body>
+
+</html>
