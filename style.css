@@ -1,3 +1,51 @@
+@media (max-width: 768px) {
+
+    /* Oldalsó menü felülre kerül */
+    .sidenav {
+        width: 100%;
+        position: relative;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sidenav a {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Main tartalom */
+    .main {
+        margin-left: 0;
+        padding: 20px;
+        width: 100%;
+    }
+
+    /* Topbar */
+    .topbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Képek */
+    img {
+        width: 100% !important;
+        height: auto !important;
+        margin: 10px 0 !important;
+        float: none !important;
+    }
+
+    /* Lista */
+    ul {
+        padding-left: 20px;
+    }
+
+    /* Header */
+    header {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
 /*csuszos görgetés a linkekhez*/
 html{
     scroll-behavior: smooth;
@@ -115,6 +163,7 @@ body{
     margin-bottom:10px;
     width: 80%;
     display: block;
+    padding: 20px;
 }
 .main p{
     margin:20px;
