@@ -1,49 +1,47 @@
 @media (max-width: 768px) {
 
-    /* Oldalsó menü felülre kerül */
+    /* Topbar eltüntetése */
+    .topbar {
+        display: none;
+    }
+
+    /* Sidenav átalakítása felső menüvé */
     .sidenav {
-        width: 100%;
         position: relative;
+        width: 100%;
         height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
         padding: 10px;
-        text-align: center;
     }
 
+    /* Menü linkek vízszintesen */
     .sidenav a {
-        display: block;
+        display: inline-block;
         padding: 10px;
+        font-size: 14px;
     }
 
-    /* Main tartalom */
+    /* "Tartalomjegyzék" szöveg eltüntetése */
+    .sidenav p {
+        display: none;
+    }
+
+    /* Main teljes szélesség */
     .main {
         margin-left: 0;
-        padding: 20px;
         width: 100%;
+        padding: 20px;
     }
 
-    /* Topbar */
-    .topbar {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    /* Képek */
+    /* Képek ne lógjanak ki */
     img {
-        width: 100% !important;
-        height: auto !important;
-        margin: 10px 0 !important;
-        float: none !important;
-    }
-
-    /* Lista */
-    ul {
-        padding-left: 20px;
-    }
-
-    /* Header */
-    header {
-        font-size: 1.5em;
-        text-align: center;
+        width: 100%;
+        height: auto;
+        float: none;
+        margin: 10px 0;
     }
 }
 /*csuszos görgetés a linkekhez*/
