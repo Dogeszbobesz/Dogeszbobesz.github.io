@@ -186,7 +186,7 @@ header {
     .main {
         margin-left: 0; /* Mobilon nincs bal oldali margó! */
         margin-right: 0;
-        margin-top: 110px; /* Hely a fenti menünek */
+        margin-top: 10px; /* Hely a fenti menünek */
         width: 100%;
         border-radius: 0;
         padding: 15px;
