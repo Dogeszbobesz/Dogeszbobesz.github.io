@@ -73,6 +73,7 @@ body {
 
 .sidenav a:hover {
     color: white;
+    transform: translateX(5px);
 }
 
 .main {
@@ -199,7 +200,7 @@ header {
         height: auto;
         margin: 0;
         padding: 5px;
-        background-color:transparent;
+        background-color: rgb(51, 49, 49);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -219,6 +220,11 @@ header {
         width: auto;
         border-radius: 8px;
     }
+
+    .sidenav a:hover {
+    color: white;
+    transform: translateY(3px);
+}
 
     .main {
         margin-left: 0px;
