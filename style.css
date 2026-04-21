@@ -1,10 +1,6 @@
 * {
-    box-sizing: border-box; /* Ez megakadályozza, hogy a padding és a margin "kitolja" az elemeket a képernyőről */
+    box-sizing: border-box; 
 }
-li {
-    margin-bottom: 10px;
-    font-size: 24px;
-}   
 html {
     scroll-behavior: smooth;
     background-color: rgb(87, 87, 87);
@@ -19,7 +15,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* 2. Asztali (Desktop) nézet stílusai */
+
 .topbar {
     display: flex;
     width: 100%;
@@ -77,18 +73,17 @@ body {
 
 .sidenav a:hover {
     color: white;
-    transform: translateX(5px);
 }
 
 .main {
-    margin-left: 240px; /* Helyet hagyunk a bal oldali menünek */
+    margin-left: 240px; 
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
     background-color: white;
     border-radius: 20px;
-    width: calc(100% - 260px); /* Kiszámoljuk a maradék helyet */
+    width: calc(100% - 260px); 
 }
 
 .main p {
@@ -128,31 +123,72 @@ header {
     position: center;
     justify-content: center;
 }
-    .profilkep {
+.profilkep {
     width: 20%;
     height: 20%;
     float: right;
     margin-bottom:0px;
     border-radius: 10px
     }
-    .tdkpl {
+    li {
+    margin-bottom: 10px;
+    font-size: 24px;
+}   
+.tdkpl {
     display: flex !important;
     justify-content: center !important;
     width: 100% !important;
     margin-bottom: 30px;
 }
-    .tdkpl img {
-    float: none !important; /* Kikapcsoljuk az eltolást */
-    display: block;        /* Blokk elemként kezeljük */
-    margin: 0 auto;        /* Középre igazítjuk */
-    max-width: 70%;       /* Ne lógjon ki */
+.tdkpl img {
+    float: none !important;
+    display: block;  
+    margin: 0 auto;       
+    max-width: 70%;      
     height: auto;
 }
+.munkakmain{
+    width: calc(100%-30px);
+    margin-bottom:20px;
+    border-style:none;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+}
+.munka-kontener {
+  display: flex;   
+  align-items: center;  
+  width: 100%;
+  gap: 20px;        
+  height: auto;
+  margin-bottom: 10px;
+}
 
-/* 3. MOBIL NÉZET - Ez legyen a fájl végén, hogy felülbírálja az asztalit! */
+.munkakephely {
+  flex: 0 0 30%;      
+}
+
+.munkakep {
+  width: 100%;        
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.munkaszoveg {
+  flex: 1;         
+  margin: 0;           
+}
+
+.munkaneve {
+  flex: 0 0 15%;        
+  text-align: right;    
+  font-weight: bold;
+}
+
 @media screen and (max-width: 768px) {
     .topbar {
-        display: none; /* Mobilon ne foglalja a helyet a felső sáv */
+        display: none; 
     }
 
     .sidenav {
@@ -163,7 +199,7 @@ header {
         height: auto;
         margin: 0;
         padding: 5px;
-        background-color: rgb(51, 49, 49);
+        background-color:rgb(51, 49, 49);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -173,7 +209,7 @@ header {
     }
 
     .sidenav p {
-        display: none; /* A "Tartalomjegyzék" felirat mobilon felesleges */
+        display: none; 
     }
 
     .sidenav a {
@@ -184,15 +220,10 @@ header {
         border-radius: 8px;
     }
 
-    .sidenav a:hover {
-    color: white;
-    transform: translateY(3px);
-}
-
     .main {
-        margin-left: 0; /* Mobilon nincs bal oldali margó! */
-        margin-right: 0;
-        margin-top: 40px; /* Hely a fenti menünek */
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 110px;
         width: 100%;
         border-radius: 0;
         padding: 15px;
@@ -200,7 +231,7 @@ header {
     }
 
     .main img {
-        float: none; /* Ne ússzon a kép, mert mobilon túl kicsi hozzá a hely */
+        float: none; 
         display: block;
         width: 80%;
         margin: 20px auto;
@@ -219,4 +250,14 @@ header {
     .main p {
         font-size: 20px;
     }
+    .munkakmain{
+    width: calc(100%);
+    margin-left: 5px;
+    margin-right:5px;
+    margin-bottom:20px;
+    margin-top: 50px;
+    border-style:none;
+    border-radius: 20px;
+    background-color: white;
+}
 }
