@@ -73,6 +73,7 @@ body {
 
 .sidenav a:hover {
     color: white;
+    transform: translateX(10px);
 }
 
 .main {
@@ -218,6 +219,9 @@ header {
         padding: 8px 12px;
         width: auto;
         border-radius: 8px;
+    }
+    .sidenav a:hover {
+        transform: translateY(10px);
     }
 
     .main {
