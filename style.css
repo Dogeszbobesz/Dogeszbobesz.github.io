@@ -73,7 +73,6 @@ body {
 
 .sidenav a:hover {
     color: white;
-    transform: translateX(5px);
 }
 
 .main {
@@ -157,33 +156,33 @@ header {
     padding: 10px;
 }
 .munka-kontener {
-  display: flex;         /* This is the magic: it puts children side-by-side */
-  align-items: center;   /* Keeps everything vertically centered */
+  display: flex;   
+  align-items: center;  
   width: 100%;
-  gap: 20px;             /* Adds a nice 20px gap between the items */
+  gap: 20px;        
   height: auto;
   margin-bottom: 10px;
 }
 
 .munkakephely {
-  flex: 0 0 30%;         /* Image container takes exactly 30% */
+  flex: 0 0 30%;      
 }
 
 .munkakep {
-  width: 100%;           /* Image fills its 30% container */
+  width: 100%;        
   height: auto;
   border-radius: 10px;
   display: block;
 }
 
 .munkaszoveg {
-  flex: 1;               /* Description takes all the remaining middle space */
-  margin: 0;             /* Removes default paragraph margins */
+  flex: 1;         
+  margin: 0;           
 }
 
 .munkaneve {
-  flex: 0 0 15%;         /* Name takes a fixed 15% on the far right */
-  text-align: right;     /* Keeps the name pushed to the right edge */
+  flex: 0 0 15%;        
+  text-align: right;    
   font-weight: bold;
 }
 
@@ -200,7 +199,7 @@ header {
         height: auto;
         margin: 0;
         padding: 5px;
-        background-color: rgb(51, 49, 49);
+        background-color:rgb(51, 49, 49);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -220,11 +219,6 @@ header {
         width: auto;
         border-radius: 8px;
     }
-
-    .sidenav a:hover {
-    color: white;
-    transform: translateY(3px);
-}
 
     .main {
         margin-left: 0px;
